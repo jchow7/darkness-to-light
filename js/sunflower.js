@@ -9,10 +9,10 @@ function setup() {
   textAlign(CENTER);
   angleMode(DEGREES);
   textFont(font);
+  background(240, 225, 211);
 }
 
 function draw() {
-  background(240, 225, 211);
   textSize(24);
   noStroke();
   fill(255,255,102);
@@ -22,6 +22,7 @@ function draw() {
   text('take one', width/2, 345);
   text('day', width/2, height/2);
   text('at a time', width/2, 420);
+  text('believe',mouseX,mouseY);
   drawFlowerPetal();
   drawMessage();
 }
