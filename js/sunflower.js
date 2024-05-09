@@ -18,10 +18,12 @@ function draw() {
   fill(255,255,102);
   ellipse(width/2,height/2,200,200);
   fill('black');
+  text('a n d...', width/2, 200);
   text('take one', width/2, 345);
   text('day', width/2, height/2);
   text('at a time', width/2, 420);
   drawFlowerPetal();
+  drawMessage();
 }
 
 function drawFlowerPetal(){
@@ -75,4 +77,14 @@ function drawFlowerPetal(){
   }
 }
 
+function drawMessage(){
+  //code taken from https://cratecode.com/info/p5js-text-effects//
+  var message = "you got this :)";
+  var spacing = 55;
 
+  for (let i = 0; i < message.length; i++) {
+    let x = 350 + i * spacing;
+    let y = 600 + sin(frameCount * 0.1 + i) * 20;
+    text(message.charAt(i), x, y);
+ }
+}
