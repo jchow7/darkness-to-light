@@ -19,13 +19,13 @@ function draw() {
   text('it', width/2, height/3.4);
   text('feels like', width/2, height/2.2);
   text('we are', width/2, height/1.6);
-  // text('drowning', width/2, height/1.2);
 
+  //code taken from https://cratecode.com/info/p5js-text-effects//
   var message = ". . . drowning . . . ";
   var spacing = 55;
 
   for (let i = 0; i < message.length; i++) {
-    let x = 220 + i * spacing;
+    let x = 240 + i * spacing;
     let y = 600 + sin(frameCount * 0.1 + i) * 20;
     text(message.charAt(i), x, y);
  }

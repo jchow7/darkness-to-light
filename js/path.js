@@ -18,7 +18,7 @@ function draw() {
   background(240, 225, 211);
   image(pathBackground, 500, 200);
   text('click once', windowWidth/2, 50);
-  text('always stay positive and keep moving forward',mouseX,mouseY);
+  text('always stay positive and keep moving forward :)',mouseX,mouseY);
 
   noStroke();
   if (squareState == true){
@@ -36,6 +36,6 @@ function mousePressed(){
 
 function keyPressed() {
     if (keyCode === 32) { 
-        window.location.href = 'path.html';
+        window.location.href = 'sunflower.html';
     }
 }
