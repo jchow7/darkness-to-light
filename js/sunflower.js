@@ -18,7 +18,7 @@ function draw() {
   fill(255,255,102);
   ellipse(width/2,height/2,200,200);
   fill('black');
-  text('a n d...', width/2, 200);
+  text('a n d ...', width/2, 200);
   text('take one', width/2, 345);
   text('day', width/2, height/2);
   text('at a time', width/2, 420);
