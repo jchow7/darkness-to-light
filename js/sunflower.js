@@ -9,10 +9,10 @@ function setup() {
   textAlign(CENTER);
   angleMode(DEGREES);
   textFont(font);
-  background(240, 225, 211);
 }
 
 function draw() {
+  background(240, 225, 211);
   textSize(24);
   noStroke();
   fill(255,255,102);
