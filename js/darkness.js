@@ -1,8 +1,9 @@
-var words = ['anxiety', 'void', 'confused', 'sadness', 'frustrated', 'unmotivated', 'lonely', 'stressed', 'nothing', 
-'drained', 'dull', 'failure', 'impossible', 'gloomy', 'anxious', 'fear', 'messy', 'harmful', 'breakdown', 'alone', 
-'pressure', 'trapped', 'overwhelmed', 'help', 'silent', 'pain', 'insecure', 'hate', 'darkness', 'unmotivated', 
-'negative', 'depression', 'shame', 'grief', 'terrible', 'bad', 'angry', 'anxious', 'nobody', 'no one', 'nothing',
-'difficult', 'lazy', 'pushy', 'stubborn' ];
+var words = ['anxiety', 'void', 'confused', 'sadness', 'frustrated', 'unmotivated', 'lonely', 
+'stressed', 'nothing', 'drained', 'dull', 'failure', 'impossible', 'gloomy', 'anxious', 'fear', 
+'messy', 'harmful', 'breakdown', 'alone', 'pressure', 'trapped', 'overwhelmed', 'help', 'silent', 
+'pain', 'insecure', 'hate', 'darkness', 'unmotivated', 'negative', 'depression', 'shame', 'grief', 
+'terrible', 'bad', 'angry', 'anxious', 'nobody', 'no one', 'nothing','difficult', 'lazy', 'pushy', 
+'stubborn','breakdown', 'impossible','irresponsible', 'depression', ];
 
 var wordIndex = 0;
 var font;
@@ -30,10 +31,11 @@ function draw (){
 }
 
 function mouseClicked() {
+  textSize(randomFontSize); 
   text(words[wordIndex], random(windowWidth), random(windowHeight));
-  wordIndex += 1; textSize(randomFontSize);
+  wordIndex += 1;
 
-  if (wordIndex > 45) {
+  if (wordIndex > 50) {
   wordIndex= 0;
   }
 }
